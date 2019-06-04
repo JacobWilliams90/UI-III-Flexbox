@@ -71,6 +71,11 @@ h1, h2, h3, h4, h5 {
 header {
 	display: flex;
 	justify-content: flex-start space-between;
+	flex-wrap: wrap;
+}
+
+.services-header-img{
+	padding: 30px 0;
 }
 
 header nav {
@@ -200,4 +205,58 @@ footer {
 	margin: 32px 0;
 	text-align: center;
 	font-size: 14px;
+}
+
+.toppage {
+	padding-bottom: 30px;
+	border-bottom: solid 2px black;
+}
+
+.toppage h1 {
+	font-size: 30px;
+}
+
+.midpage{
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+	padding: 20px 0;
+	border-bottom: 2px solid black;
+	box-sizing: content-box;
+}
+.midpage button{
+	padding: 5px;
+	border-radius: 8px;
+	background: white;
+	margin: 10px;
+}
+
+.midpage button:hover{
+	background: gray;
+	color: white;
+}
+.midpage div {
+	margin: 20px 0;
+	width: 400px;
+	padding: 10px;
+	border: 1px solid black;
+	background: lightgray;
+}
+
+.bottompage {
+	padding: 30px 0;
+	display: flex;
+}
+
+.bottompage p {
+	padding: 20px 40px 20px 0;
+}
+
+ul {
+	margin-left: 20px;
+	list-style-type: square; 
+}
+
+li {
+	padding: 4px 0;
 }
