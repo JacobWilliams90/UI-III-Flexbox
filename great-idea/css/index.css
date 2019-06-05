@@ -63,4 +63,271 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.container {
+  	width: 880px;
+	margin: 0 auto;
+}
+
+header {
+	display: flex;
+	justify-content: flex-start space-between;
+	flex-wrap: wrap;
+}
+
+.services-header-img{
+	padding: 30px 0;
+}
+
+header nav {
+	width: 691px;
+	vertical-align: top;
+	margin-top: 35px;
+}
+
+header nav a {
+	margin-right: 65px;
+	font-size: 14px;
+	color: gray;
+	text-decoration: none;
+}
+
+header nav a:hover {
+  	text-decoration: underline;
+}
+
+header nav a:first-child {
+  	margin-left: 0;
+}
+
+header nav a:last-child {
+  	margin-right: 0;
+}
+
+header .logo {
+  	margin-top: 25px;
+}
+
+.cta {
+  	display: flex;
+}
+
+.cta .cta-text {
+	vertical-align: top;
+	font-size: 77px;
+	margin-top: 120px;
+	text-align: center;
+	padding: 0px 75px;
+}
+
+.cta .cta-text button {
+	background: white;
+	vertical-align: top;
+	margin-top: 6px;
+	padding: 8px 44px;
+	font-size: 15px;
+	border: 1px solid black;
+	cursor: pointer;
+	animation: slidein 2s ease-in 1s both running;
+}
+
+@keyframes slidein {
+	from {
+	  margin-left: 600%;
+	  width: 150%; 
+	}
+	  
+	to {
+	  margin-left: 0%;
+	  width: 55%;
+	}
+}
+
+.cta .cta-text button:hover {
+	background: black;
+	color: white;
+}
+
+.cta img {
+	display: inline-block;
+	margin-top: 69px;
+}
+
+.main-content {
+	border-top: 1px solid black;
+	margin-top: 76px;
+	padding-top: 39px;
+}
+
+.main-content .top-content {
+	padding: 0 10px;
+	display: flex;
+}
+
+.main-content .top-content .text-content {
+	width: 410px;
+	margin-right: 34px;
+}
+
+.main-content .top-content .text-content:last-child {
+	margin-right: 0;
+}
+
+.main-content .middle-img {
+  	margin-top: 45px;
+}
+
+.main-content .bottom-content {
+	margin-top: 37px;
+	padding: 0 10px;
+	display: flex;
+}
+
+.main-content .bottom-content .text-content {
+	width: 275px;
+	margin-right: 12px;
+}
+
+.main-content .bottom-content .text-content:last-child {
+  	margin-right: 0;
+}
+
+.contact {
+	margin-top: 57px;
+	border-top: 1px solid black;
+	padding: 39px 10px 0;
+}
+
+.contact p {
+  	margin: 20px 0;
+}
+
+footer {
+	margin: 32px 0;
+	text-align: center;
+	font-size: 14px;
+}
+
+.toppage {
+	padding-bottom: 30px;
+	border-bottom: solid 2px black;
+}
+
+.toppage h1 {
+	font-size: 30px;
+}
+
+.midpage{
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+	padding: 20px 0;
+	border-bottom: 2px solid black;
+	box-sizing: content-box;
+}
+.midpage button{
+	padding: 5px;
+	border-radius: 8px;
+	background: white;
+	margin: 10px;
+}
+
+.midpage button:hover{
+	background: gray;
+	color: white;
+}
+.midpage div {
+	margin: 20px 0;
+	width: 400px;
+	padding: 10px;
+	border: 1px solid black;
+	background: lightgray;
+}
+
+.bottompage {
+	padding: 30px 0;
+	display: flex;
+}
+
+.bottompage p {
+	padding: 20px 40px 20px 0;
+}
+
+ul {
+	margin-left: 20px;
+	list-style-type: square; 
+}
+
+li {
+	padding: 4px 0;
+}
+
+.actualcontacts section {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px 0 20px 20px;
+	border: 1px solid black;
+	background: lightgray;
+}
+
+.actualcontacts h1{
+	border-bottom: 2px solid black;
+	padding: 20px 0;
+	text-align: center;
+	font-size: 30px;
+}
+
+.actualcontacts div {
+	width: 400px;
+	margin: 10px;
+	border: 1px double black;
+	border-radius: 8px;
+}
+
+.actualcontacts img{
+	border-radius: 12px;
+}
+
+.text {
+	padding: 70px 0;
+	text-align: center;
+}
+
+.text button{
+	margin: 25px;
+	position: relative;
+	background-color: gray;
+	font-size: 15px;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.text button:after {
+	content: "";
+	background: #f1f1f1;
+	display: block;
+	position: absolute;
+	padding-top: 300%;
+	padding-left: 350%;
+	margin-left: -20px !important;
+	margin-top: -120%;
+	opacity: 0;
+	transition: all 0.8s
+}
+
+.text button:active:after {
+	padding: 0;
+	margin: 0;
+	opacity: 1;
+	transition: 0s
+}
+
+#workstation {
+	margin-top: 20px;
+	width: 880px;
+	padding-top: 30px;
+	padding-left: 350px;
+	border: black solid 2px;
+}
